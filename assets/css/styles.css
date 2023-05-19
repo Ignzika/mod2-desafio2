@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300&family=Mogra&family=Open+Sans:wght@300;400&display=swap');
+
+/*hermoso reemplazo a comic sans*/
+
+body{
+    margin: 0px;
+    padding: 0px ;
+
+    display: grid;
+
+    grid-template-areas: 
+    'navbar navbar navbar '
+
+    'sidebar mainarea mainarea '
+    
+    'footer footer footer '
+    ;
+
+    height: 100vh;
+    grid-template-columns: 10rem auto auto ;
+    grid-template-rows: 15rem auto 5rem ;
+    font-family: 'Comic Neue'
+}
+
+nav {
+    grid-area: navbar ;
+    background-image: url(../images/fondo1.jpg);
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgb(62, 115, 70, .6);
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-style: italic;
+    font-family: 'mogra';
+    cursor: grabbing;
+
+}
+
+nav:active{
+    cursor: grab;
+}
+
+main {
+    grid-area: mainarea ;
+    background-color: aliceblue;
+    cursor: wait;
+
+}
+
+
+aside {
+    grid-area: sidebar ;
+    background-color: rgba(128, 202, 139, 0.6);
+    display: flex;
+    justify-content: center;
+    min-width: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    
+
+}
+
+footer {
+    grid-area: footer ;
+    background-color:rgb(62, 115, 70, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+.productos{   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto ;
+    row-gap: 2em;
+    column-gap: 1em;
+    padding: 1em;
+
+}
+
+
+/* productos flex */
+
+/* .productos{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    gap: 2em;
+    
+} */
+
+
+
+.card{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    cursor: progress;
+        
+}
+
+.card > img{
+
+    margin-top: 5px;
+    min-height: 250px;
+    max-height: 250px;
+    min-width: 150px;
+    width: 90%;
+    cursor: not-allowed;
+
+}
+
+button{
+
+    border:none;
+    background-color: rgb(62, 115, 70, .6);
+    color: rgb(10, 19, 28);
+    padding: 10px 200px 10px 200px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:rgba(62, 115, 70, 0.917) ;
+    color: aliceblue;
+
+}
+
+button:active{
+    color: rgb(160, 181, 181);
+    background-color: rgba(44, 44, 147, 0.715);
+}
+
+/* textos */
+
+h1{
+    color: aliceblue;
+    font-size: 2rem;
+    
+}
+
+h2{
+    color: darkslategrey;
+    font-size: 2rem;
+    cursor: crosshair;
+}
+
+h3{
+    margin: 1em;
+
+}
+
+h5{
+    color: darkslategrey;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+    
+}
+
+span{
+    margin: 0 0 1rem 0;
+}
+
+p:hover{
+    cursor: pointer;
+}
+    content:"esto es un elemento añadido antes en css" ;
+/*aside*/
+.itemlist{
+    font-weight: 200;
+    
+}
+.itemlist:hover{
+    font-weight: 300;
+    text-transform: uppercase;
+    color: blueviolet;
+    transition: ease-in 0.2s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.itemlist:active{
+    color: rgb(160, 181, 181);
+    background-color: rgba(44, 44, 147, 0.715);
+}
+
+/*footer*/
+
+.redes , .social{
+    display: flex;
+    flex-direction: row;
+    gap:1em;
+
+}
+
+
+/*productos*/
+
+.product1{    
+
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+
+.product2{    
+    background-image: url(../images/dadocarg01.jpg);
+    background-position: center;
+    background-size: cover;
+ 
+
+}
+
+.product3{    
+
+    object-fit: cover;
+    object-position: top;
+    
+}
+
+.product4{    
+    background-image: url(../images/book1.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-position: top;
+    color: transparent;
+    
+}
+
+.product5{    
+
+    object-fit: cover;
+    object-position: top;
+}
+
+.product6{    
+    
+    background-image: url(../images/broken.jpg);
+    background-position: center;
+    background-size: cover;
+    color: transparent;
+
+}
+
+.product7{    
+
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.product8{    
+    background-image: url(../images/descarga.jpg);
+    background-position: top;
+    background-size: cover;
+    color: transparent;
+    
+}
+
+
+.product9{    
+ 
+    object-fit: cover;
+    object-position: center;
+
+}
+
+
+.product10{    
+    background-image: url(../images/roomies.jpg);
+    background-position: center;
+    background-size: cover;
+    color: transparent;
+}
+
+
+
+
+
